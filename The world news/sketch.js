@@ -1,3 +1,7 @@
+// The world news
+// by wlin
+// 12/02/2023
+
 //TURN OFF AUTO-REFRESH NOW !!!
 
 
