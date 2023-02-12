@@ -90,6 +90,11 @@ footer{
     background-image: url(../assets/images/t2.3.png); 
 } 
 
+.flex-item a#s{
+    background-image: url(../assets/images/t2.4.png); 
+} 
+
+
 .flex-item a:hover{
     color:#bbbbbb;
     background-size: 120%;
