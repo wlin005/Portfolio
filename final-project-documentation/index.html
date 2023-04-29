@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- meta viewport tag needed to make site responsive on mobile devices https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>WCC Portfolio - Demo Page</title>
+
+        <!-- including for some global styling -->
+        <link rel="stylesheet" href="../css/style.css">
+
+    </head>
+    <body>
+        <!-- if you have sub-pages think about adding a simple back button -->
+        <nav>
+            <a href="../">HOME</a>
+        </nav>
+        <header class="documentation-header">
+            <section class="center-text">
+                <h1>Generation by Light </h1>
+                <h2>by Wei Lin</h6>
+                <p> An interactive tree made of light living in a Church.</p> 
+            </section>
+        </header>
+
+        <main class="documentation-page">
+            <section>
+                <div class="responsive-video centered-content">
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/644036051?h=b260a3b1b0" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                
+            </section>
+            <section>
+                <h3>Introduction</h3>
+                <p>This is a site-specific, interactive MR (Extended Reality) piece, namely, ‘Generation by Light ’. Audiences can witness a fantastic digital tree made of light from a phone being unfolded mainly based on St James church (See picture1 & 2). Furthermore, the wonderful fruits (creatures) are grown on the tree, when players interact with the seed hidden under the floor. </p>
+            </section>
+            <section>
+                <h3>Concept and Background Research</h3>
+                
+                <p>Augmented reality is a good way to bring solid physical space to different dimensions. This is because virtual spaces can be rebuilt more easily than physical spaces, and I am very curious about the alternative possibilities of the physical space in which I often live (See pictures 1，2, and 5 - 8). To reference my previous work, ‘Unfold’1(2023) (See pictures 3 & 4), which is an interactive installation piece to explore the interaction between virtual and physical books, as this serves as inspiration for ‘Generation by Light’. Another piece that inspired me is ‘The Deep Listener’ by (2019)2 (See picture 9, 10, 11 & 12) which is “an audio-visual ecological expedition through Kensington Gardens and Hyde Park”. This work gives me the feeling that life is connected to this music in a resonant way, in the meantime, it is the perfect visual reference in my work.  The new journey combines previously mentioned physical space, that is relative to me and my imagination, to create a hybrid space that is different to the physical space. More specifically, ‘Generation by Light’ creates three elements; one is a flooding twisting tree trunk constructed by a hundred and thousand fluid luminous points which grow in front of the rose window in the church, the second element is tree of the colorful crystal fruits in, the third element is the silver seeds of fruits. In this project, light and curves are the main media to organize creatures in the virtual world. The abstract tree trunk symbolizes the source of creation and given that is the trunk constructed by the fluid luminous particles, the rose window acts as a communicator, translating the light from the outside of the building into the language of the building's interior. In terms of interaction, the audiences will be able to find the sliver seeds under the floor of church by touching the screen of a phone, enabling them to participate in the interaction with the trunk growing different fruits from seeds. </p>
+                
+                <!-- if you have a full width image try make it not too tall -->
+                <img src="../assets/images/repeating-diagonal-lines-strip.jpeg"/>
+                
+            </section>
+            <section>
+                <h3>Technical Implementation</h3>
+
+                <!-- example of styling for three images, you can write your own styling -->
+                <div class="flex-container flex-basis-third">
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-square.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-square.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-square.jpeg"/>
+                    </div>
+                </div>
+                
+                <p>Unity, AR Foundation framework, plane checking, VFX graph (The Visual Effect Graph), Shader graph, Rhino, and Phone are all included in ‘Generation by Light’. There are four technical phases in which includes two status; a standard state where a trunk is constructed by fluid luminous particles generated from the rose window on the view of the phone (See picture 17), another interactive status where colorful fruits are created from the trunk while the sliver seeds are triggered by audiences touching the screen from the floor of the church or the plane in the space (See picture 18). At this time, I have completed first three phases, First, Plane checking, created by Rebecca Aston (2023)3 was chosen as the main interaction for the work based on ARfoundation, as this function fits the conception of discovering seeds under the floor (See picture 19 & 20), another most important reason is for the accuracy of position to display the trunk. Next, in terms of key vision (See picture 22-24), the particle trunk plays the main role in the scene made by the VFX graph as I consider the flowing light to construct a tree trunk from the rose window. Third, regarding interaction, the fruits grow and disappear depending on detecting collision by seeds (See picture 26-32). The fruit will grow up If the seeds enter the area of the box collider for fruit and the fruit will fade out when the seeds come to the box collider again. Seeds grow and disappear from the tree as the cycle of life. Finally, one UI (user interface) is designed to guide the audience to touch the flood on the phone for trigger seeds (See picture 33). 
+                <!-- example of styling for three images, you can write your own styling -->
+                <div class="flex-container flex-basis-half">
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div>
+                </div>
+
+                <!-- default flex item is for 4 & follows media query styling for home page -->
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div>
+                </div>
+         
+            </section>
+            <section>
+                <h3>Reflection and Future Development</h3>
+                <p>I believe that this endeavour came close to achieving what I had originally suggested. This is because I successfully built the basically interactive virtual world in AR with physical space. In my perspective, this endeavour taught me a tone of fresh information. For instance, I learnt how to build the AR scene to my phone, and the shader graph is very powerful material for interacting, and VFS graph is easy to build the particle system and it is also the most intriguing aspect for me. However, I don’t do well at feedback of interaction. Therefore, the audiences may not realize when they have been interacted. For my future iteration, I will focus on user experiences. For example, I will make some sounds and the effects when the audiences trigger the fruit to come out. </p>
+            </section>
+            <section>
+                <h3>References</h3>
+                <ul>
+                    <li>The Deep Listener (2019). by Steensen, J K . www.youtube.com[Online] Accessed: (86) The Deep Listener: Jakob Kudsk Steensen - YouTube </li>
+                    <li>Unfold (2023 , Jan, 16).  by Lin, W. www.vimeo.com[Online]. Accessed:Unfold on Vimeo </li>
+
+                    <h3>Technical References </h3>
+                    <li>Extended Reality for Creative Practice (2022-23), by Aston, R . https://learn.gold.ac.uk/[Online]. Available: Course: IS71105B: Extended Reality for Creative Practice (2022-23) (gold.ac.uk) </li>
+                    <li>Prod, G A. Title of Video: Unity Shader Graph - Grow Vines | Trees Tutorial. (04 20, 2021). Accessed: 04 25, 2023. [Online Video]. Available: Unity Shader Graph - Grow Vines | Trees Tutorial </li>
+                    <li>GAME VFX. Title of Video: Unity VFX Graph Tutorial How to bake SDF and use in Visual Effect Graph. (12 15, 2019). Accessed: 04 25, 2023. [Online Video]. Available: https://www.youtube.com/watch?v=UOrsOO9QmUc&t=513s </li>
+                    <li>MitMac Games. Title of Video: Creating force field with shader graph. (4 14, 2023). Accessed: 04 25, 2023. [Online Video]. Available: https://www.youtube.com/watch?v=vhXAD3iOkzY&t=349s  </li>
+                   
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <!-- normally information like contact details etc  -->
+            <!-- read more about semantic HTML https://www.w3schools.com/html/html5_semantic_elements.asp -->
+            
+         </footer>
+    </body>
+</html>

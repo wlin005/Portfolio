@@ -95,6 +95,22 @@ footer{
 } 
 
 
+.flex-item a{
+    display: flex;
+    width: 100%;
+    height: 0;
+    padding: 30% 0;
+    background-image: url(../assets/images/lightgrey-line.jpeg); /*change the image to one of you choice */
+    background-position: center;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color:#4f4f4f;
+    transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
 .flex-item a:hover{
     color:#bbbbbb;
     background-size: 120%;
